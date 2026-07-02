@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak Gupta — Software Developer</title>
+  <meta name="description" content="Deepak Gupta — Full Stack Software Developer working across Java, Spring Boot, microservices, React.js, and distributed systems. Currently building Yahoo Mail's platform." />
+  <meta name="author" content="Deepak Gupta" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deepak Gupta — Software Developer" />
+  <meta property="og:description" content="Full stack engineer building end-to-end web platforms with Java, Spring Boot & React.js." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">DG<span>.</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-toggle__icon">◐</span>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow"><span class="dot"></span> Available for full stack &amp; distributed-systems work</p>
+          <h1 class="hero__title">
+            Deepak <span class="grad">Gupta</span>
+          </h1>
+          <p class="hero__role">Full Stack Software Developer</p>
+          <p class="hero__lede">
+            I build <strong>end-to-end web platforms</strong> — from <strong>high-availability Java &amp; Spring Boot
+            backends</strong> to <strong>responsive React.js frontends</strong>. Currently engineering
+            <strong>Yahoo Mail's</strong> platform — REST APIs, IMAP/POP3 services, and authorization —
+            serving millions of users.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Work</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://www.linkedin.com/in/deepak-gupta-216704209" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <span>·</span>
+            <a href="https://github.com/dgupta03-byte" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <span>·</span>
+            <a href="mailto:deepak.g201617@gmail.com" aria-label="Email">Email</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <div class="hero__photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Deepak Gupta" loading="eager" />
+          </div>
+          <div class="hero__badge">
+            <span class="hero__badge-k">4 yrs</span>
+            <span class="hero__badge-l">Building Software</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">↓</a>
+    </section>
+
+    <!-- Stats strip -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat"><span class="stat__num" data-count="10">0</span><span class="stat__label">Microservices shipped</span></div>
+        <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Enterprise platforms</span></div>
+        <div class="stat"><span class="stat__num stat__num--exact" data-count="4">0</span><span class="stat__label">Years experience</span></div>
+        <div class="stat"><span class="stat__num-text">M+</span><span class="stat__label">Users served daily</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about">
+          <div class="about__body">
+            <p>
+              I'm a full stack software developer working at <strong>Yahoo</strong> (via Infosys), where I engineer
+              RESTful Java APIs, IMAP/POP3 services, and Athenz ACL authorization policies for Yahoo Mail's platform —
+              the systems behind mail sync, caching, and messaging for millions of users.
+            </p>
+            <p>
+              I work across the stack — designing high-availability <strong>Java &amp; Spring Boot</strong> microservices
+              and building responsive <strong>React.js / JavaScript</strong> frontends. Across roles at <strong>Yahoo</strong>
+              and <strong>American Express</strong>, I've architected and shipped services to production on GCP/GKE with
+              proper CI/CD, monitoring, and incident practices. I care about clean code, sound system design (HLD/LLD),
+              and products that stay fast and reliable end to end.
+            </p>
+            <div class="about__facts">
+              <div><span class="k">Based in</span><span class="v">Gurugram, India</span></div>
+              <div><span class="k">Role</span><span class="v">Specialist Programmer</span></div>
+              <div><span class="k">Focus</span><span class="v">Full stack web</span></div>
+              <div><span class="k">Degree</span><span class="v">B.Tech, IET Lucknow</span></div>
+            </div>
+          </div>
+          <aside class="about__awards">
+            <h3>Recognition</h3>
+            <div class="award">
+              <span class="award__icon">★</span>
+              <div>
+                <p class="award__title">Employee of the Year 2025</p>
+                <p class="award__desc">Recognized for consistent delivery and impact.</p>
+              </div>
+            </div>
+            <div class="award">
+              <span class="award__icon">★</span>
+              <div>
+                <p class="award__title">Director Appreciation — American Express</p>
+                <p class="award__desc">Acknowledged for ownership and high-quality engineering.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <article class="tl">
+            <div class="tl__marker"></div>
+            <div class="tl__content">
+              <div class="tl__top">
+                <h3>Yahoo <span class="tl__sub">· via Infosys — Specialist Programmer</span></h3>
+                <span class="tl__date">Apr 2025 — Present</span>
+              </div>
+              <p class="tl__meta">Software Developer · Gurugram</p>
+              <ul class="tl__list">
+                <li>Engineer <strong>RESTful Java APIs, IMAP/POP3 services, and Athenz ACL authorization</strong> for Yahoo Mail's backend, powering mail sync, caching, and messaging for millions of users.</li>
+                <li>Previously built and maintained RESTful Java APIs for <strong>Yahoo Calendar</strong>, powering event and to-do workflows used across regions.</li>
+                <li>Provision backend services on <strong>GCP/GKE</strong> with Docker and Rancher Desktop; automate build/test/deploy via <strong>Screwdriver CI/CD</strong> with mTLS verification and post-deploy smoke tests.</li>
+              </ul>
+              <ul class="tl__tags">
+                <li>Java</li><li>Spring Boot</li><li>IMAP/POP3</li><li>Jersey/Jetty</li><li>GCP/GKE</li><li>Kubernetes</li><li>Screwdriver CI/CD</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl">
+            <div class="tl__marker"></div>
+            <div class="tl__content">
+              <div class="tl__top">
+                <h3>American Express <span class="tl__sub">· via Infosys — Specialist Programmer</span></h3>
+                <span class="tl__date">Oct 2023 — Mar 2025</span>
+              </div>
+              <p class="tl__meta">Software Developer · Bengaluru</p>
+              <ul class="tl__list">
+                <li><strong>Architected and shipped 5+ Java microservices</strong> (HLD + LLD) for high-availability, fault-tolerant delivery of identity data (GUIDs, profiles, product details) under high-volume traffic.</li>
+                <li>Modernized critical <strong>failover shell scripts into optimized Java</strong>, applying SOLID principles and design patterns to improve performance, scalability, and uptime.</li>
+              </ul>
+              <ul class="tl__tags">
+                <li>Java</li><li>Microservices</li><li>JPA/Hibernate</li><li>SQL</li><li>React.js</li><li>Splunk</li><li>Grafana</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl">
+            <div class="tl__marker"></div>
+            <div class="tl__content">
+              <div class="tl__top">
+                <h3>Infosys Ltd. <span class="tl__sub">· Specialist Programmer</span></h3>
+                <span class="tl__date">Feb 2023 — Jul 2023</span>
+              </div>
+              <p class="tl__meta">Epharmacy Platform · Bengaluru</p>
+              <ul class="tl__list">
+                <li>Engineered <strong>Epharmacy</strong>, a web-based medicine-purchasing platform across 4+ Java microservices with scalability and fault isolation between domains.</li>
+                <li>Shipped user registration and order management; tuned core data structures and algorithms to keep search and cart flows responsive under high concurrency.</li>
+              </ul>
+              <ul class="tl__tags">
+                <li>Java</li><li>Spring Boot</li><li>Microservices</li><li>JUnit</li><li>Mockito</li>
+              </ul>
+              <a class="tl__link" href="https://github.com/dgupta03-byte/Epharmacy" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="tl">
+            <div class="tl__marker"></div>
+            <div class="tl__content">
+              <div class="tl__top">
+                <h3>Jira Reporting Application <span class="tl__sub">· Full Stack Project</span></h3>
+                <span class="tl__date">Aug 2023 — Sep 2023</span>
+              </div>
+              <p class="tl__meta">Spring Boot + MySQL backend · HTML5/JavaScript frontend</p>
+              <ul class="tl__list">
+                <li>Authored a <strong>Spring Boot + MySQL</strong> backend (Spring Data JPA/Hibernate) ingesting and persisting 10K+ row Jira CSVs in seconds, with dynamic report endpoints by assignee, issue ID, and project code.</li>
+                <li>Crafted an <strong>HTML5 + JavaScript</strong> frontend with AJAX filtering, sortable tables, and interactive analytics under a strict <strong>MVC architecture</strong>.</li>
+              </ul>
+              <ul class="tl__tags">
+                <li>Spring Boot</li><li>JPA/Hibernate</li><li>MySQL</li><li>Apache Commons CSV</li><li>HTML5</li><li>JavaScript</li><li>MVC</li>
+              </ul>
+              <a class="tl__link" href="https://github.com/dgupta03-byte/Jira_Reporting_Application" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Technical Skills</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <ul><li>Java</li><li>C++</li><li>JavaScript</li><li>SQL</li><li>Shell</li><li>HTML/CSS</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Frameworks &amp; Backend</h3>
+            <ul><li>Spring Boot</li><li>Spring Data JPA</li><li>Hibernate</li><li>Spring REST</li><li>Microservices</li><li>JUnit</li><li>Mockito</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul><li>React.js</li><li>JavaScript</li><li>HTML5</li><li>CSS</li><li>AJAX</li><li>Responsive UI</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Backend Engineering</h3>
+            <ul><li>Distributed Systems</li><li>High Availability</li><li>Fault Tolerance</li><li>Scalability</li><li>Performance Tuning</li><li>Monitoring &amp; RCA</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>CS Fundamentals</h3>
+            <ul><li>Data Structures</li><li>Algorithms</li><li>Design Patterns</li><li>OOP</li><li>System Design (HLD/LLD)</li><li>Clean Code</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <ul><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Schema Design</li><li>Indexing</li><li>Query Optimization</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Cloud &amp; DevOps</h3>
+            <ul><li>GCP</li><li>Logs Explorer</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Screwdriver CI/CD</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <ul><li>Git</li><li>Gerrit</li><li>Postman</li><li>curl</li><li>IntelliJ</li><li>Splunk</li><li>Grafana</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Featured Projects</h2>
+        </div>
+        <div class="projects">
+
+          <article class="project">
+            <div class="project__head">
+              <span class="project__folder">◧</span>
+              <div class="project__links">
+                <a href="https://github.com/dgupta03-byte/Epharmacy" target="_blank" rel="noopener" aria-label="GitHub">GitHub ↗</a>
+              </div>
+            </div>
+            <h3 class="project__title">Epharmacy Platform</h3>
+            <p class="project__desc">
+              A web-based medicine-purchasing platform built across 4+ Java microservices with fault isolation between
+              domains. Includes user registration and order management, with data structures and algorithms tuned to
+              keep search and cart flows responsive under high-concurrency load.
+            </p>
+            <ul class="project__tags">
+              <li>Java</li><li>Spring Boot</li><li>Microservices</li><li>REST APIs</li><li>JUnit</li><li>Mockito</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <span class="project__folder">◧</span>
+              <div class="project__links">
+                <a href="https://github.com/dgupta03-byte/Jira_Reporting_Application" target="_blank" rel="noopener" aria-label="GitHub">GitHub ↗</a>
+              </div>
+            </div>
+            <h3 class="project__title">Jira Reporting Application</h3>
+            <p class="project__desc">
+              A Spring Boot + MySQL backend (Spring Data JPA/Hibernate) that ingests and persists 10K+ row Jira CSVs
+              in seconds, with dynamic report endpoints by assignee, issue ID, and project code. Frontend adds AJAX
+              filtering, sortable tables, and interactive analytics under a strict MVC architecture.
+            </p>
+            <ul class="project__tags">
+              <li>Spring Boot</li><li>JPA/Hibernate</li><li>MySQL</li><li>Apache Commons CSV</li><li>JavaScript</li><li>MVC</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <span class="section__index">05</span>
+        <h2 class="contact__title">Let's build something<br /><span class="grad">reliable.</span></h2>
+        <p class="contact__lede">
+          Open to full stack roles, backend and distributed-systems work, and collaborations. The fastest way to
+          reach me is email — I'll get back to you.
+        </p>
+        <a href="mailto:deepak.g201617@gmail.com" class="btn btn--primary btn--lg">deepak.g201617@gmail.com</a>
+        <div class="contact__links">
+          <a href="tel:+918795422090">+91 87954 22090</a>
+          <a href="https://www.linkedin.com/in/deepak-gupta-216704209" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/dgupta03-byte" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Deepak Gupta</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
